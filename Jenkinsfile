@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('https://registry.hub.docker.com', 'dockerHub') {
+    docker.withRegistry('https://registry.hub.docker.com', 'ramadas-docker-git-connection') {
 
         def customImage = docker.build("ramadasm/dockerwebapp")
 
